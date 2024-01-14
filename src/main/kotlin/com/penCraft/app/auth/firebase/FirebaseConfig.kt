@@ -1,5 +1,6 @@
 package dev.zlagi.application.auth.firebase
 
+import com.penCraft.app.auth.firebase.FirebaseAuthenticationProvider
 import kotlinx.coroutines.runBlocking
 
 object FirebaseConfig {

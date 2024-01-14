@@ -1,6 +1,6 @@
-package com.PenCraft
+package com.penCraft
 
-import com.PenCraft.plugins.*
+import com.penCraft.plugins.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*

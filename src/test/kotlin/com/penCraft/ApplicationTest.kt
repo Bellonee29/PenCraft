@@ -1,4 +1,4 @@
-package com.PenCraft
+package com.penCraft
 
 class ApplicationTest {
 }
