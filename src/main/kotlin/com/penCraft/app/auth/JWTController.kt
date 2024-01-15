@@ -3,7 +3,7 @@ package dev.zlagi.application.auth
 import com.auth0.jwt.JWT
 import com.auth0.jwt.JWTVerifier
 import com.auth0.jwt.algorithms.Algorithm
-import dev.zlagi.application.model.response.TokenResponse
+import com.penCraft.app.auth.model.response.TokenResponse
 import dev.zlagi.data.model.User
 import java.util.*
 
