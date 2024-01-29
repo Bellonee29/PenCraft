@@ -1,4 +1,4 @@
-package dev.zlagi.application.auth
+package com.penCraft.app.auth
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.JWTVerifier

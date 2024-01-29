@@ -1,4 +1,4 @@
-package dev.zlagi.application.auth
+package com.penCraft.app.auth
 
 import org.mindrot.jbcrypt.BCrypt
 import java.security.SecureRandom
@@ -34,16 +34,16 @@ object PasswordEncryptor : PasswordEncryptorContract {
         var i = 0
 
         if (isWithLetters) {
-            result += this.letters
+            result += letters
         }
         if (isWithUppercase) {
-            result += this.uppercaseLetters
+            result += uppercaseLetters
         }
         if (isWithNumbers) {
-            result += this.numbers
+            result += numbers
         }
         if (isWithSpecial) {
-            result += this.special
+            result += special
         }
 
         val rnd = SecureRandom.getInstance("SHA1PRNG")
