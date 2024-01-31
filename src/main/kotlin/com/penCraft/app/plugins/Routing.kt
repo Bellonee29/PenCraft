@@ -1,13 +1,14 @@
 package com.penCraft.app.plugins
 
-import io.ktor.server.application.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
+import com.penCraft.app.router.authApi
+import com.penCraft.app.router.blogApi
+import io.ktor.application.*
+import io.ktor.client.*
+import io.ktor.routing.*
 
-fun Application.configureRouting() {
+fun Application.configureRouting(httpClient: HttpClient, apiKey: String) {
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
+        authApi()
+        blogApi(httpClient, apiKey)
     }
 }

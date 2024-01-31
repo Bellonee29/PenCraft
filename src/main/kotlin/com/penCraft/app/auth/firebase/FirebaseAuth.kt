@@ -1,9 +1,10 @@
-package com.penCraft.app.firebase
+package com.penCraft.app.auth.firebase
 
 import com.google.firebase.ErrorCode
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthException
+import com.penCraft.app.model.response.GeneralResponse
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.http.*

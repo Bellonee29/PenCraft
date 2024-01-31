@@ -1,4 +1,4 @@
-package dev.zlagi.application.auth.firebase
+package com.penCraft.app.auth.firebase
 
 import io.ktor.auth.*
 

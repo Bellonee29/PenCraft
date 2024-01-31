@@ -1,4 +1,4 @@
-package dev.zlagi.application.plugins
+package compenCraft.app.plugins
 
 import io.ktor.application.*
 import io.ktor.features.*

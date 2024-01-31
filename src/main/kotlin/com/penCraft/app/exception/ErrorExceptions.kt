@@ -1,4 +1,4 @@
-package dev.zlagi.application.exception
+package com.penCraft.app.exception
 
 class BlogNotFoundException(override val message: String) : Exception(message)
 

@@ -1,21 +1,21 @@
-package dev.zlagi.application.controller.auth
+package com.penCraft.app.controller.auth
 
 import com.auth0.jwt.exceptions.JWTDecodeException
 import com.auth0.jwt.exceptions.SignatureVerificationException
 import com.auth0.jwt.exceptions.TokenExpiredException
 import com.penCraft.app.auth.TokenProvider
-import dev.zlagi.application.auth.firebase.FirebaseUserPrincipal
-import dev.zlagi.application.auth.principal.UserPrincipal
+import com.penCraft.app.auth.firebase.FirebaseUserPrincipal
+import com.penCraft.app.auth.principal.UserPrincipal
+import com.penCraft.app.exception.BadRequestException
+import com.penCraft.app.exception.UnauthorizedActivityException
+import com.penCraft.app.model.request.*
+import com.penCraft.app.model.response.AccountResponse
+import com.penCraft.app.model.response.AuthResponse
+import com.penCraft.app.model.response.GeneralResponse
+import com.penCraft.app.model.response.Response
+import com.penCraft.data.dao.TokenDao
+import com.penCraft.data.dao.UserDao
 import dev.zlagi.application.controller.BaseController
-import dev.zlagi.application.exception.BadRequestException
-import dev.zlagi.application.exception.UnauthorizedActivityException
-import dev.zlagi.application.model.request.*
-import dev.zlagi.application.model.response.AccountResponse
-import dev.zlagi.application.model.response.AuthResponse
-import dev.zlagi.application.model.response.GeneralResponse
-import dev.zlagi.application.model.response.Response
-import dev.zlagi.data.dao.TokenDao
-import dev.zlagi.data.dao.UserDao
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.http.*
@@ -51,7 +51,7 @@ class DefaultAuthController : BaseController(), AuthController, KoinComponent {
                     tokens.refresh_token,
                 )
             }
-        } catch (e: BadRequestException) {
+        } catch (e: io.ktor.features.BadRequestException) {
             GeneralResponse.failed(e.message)
         }
     }

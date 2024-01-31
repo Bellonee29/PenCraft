@@ -1,11 +1,11 @@
-package dev.zlagi.application.plugins
+package com.penCraft.app.plugins
 
 import com.auth0.jwt.interfaces.JWTVerifier
 import com.penCraft.app.auth.JWTController
 import com.penCraft.app.auth.PasswordEncryptor
 import com.penCraft.app.auth.PasswordEncryptorContract
 import com.penCraft.app.auth.TokenProvider
-import com.penCraft.app.auth.controller.di.ControllerModule
+import com.penCraft.app.controller.di.ControllerModule
 import dev.zlagi.data.di.DaoModule
 import io.ktor.application.*
 import org.koin.core.annotation.KoinReflectAPI

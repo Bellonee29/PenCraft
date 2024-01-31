@@ -3,8 +3,8 @@ package com.penCraft.app.auth
 import com.auth0.jwt.JWT
 import com.auth0.jwt.JWTVerifier
 import com.auth0.jwt.algorithms.Algorithm
-import com.penCraft.app.auth.model.response.TokenResponse
-import dev.zlagi.data.model.User
+import com.penCraft.app.model.response.TokenResponse
+import com.penCraft.data.model.User
 import java.util.*
 
 object JWTController : TokenProvider {

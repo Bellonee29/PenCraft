@@ -1,7 +1,7 @@
 package com.penCraft.app.model.response
 
-import dev.zlagi.application.model.response.Response
-import dev.zlagi.application.model.response.State
+import com.penCraft.app.model.response.Response
+import com.penCraft.app.model.response.State
 import kotlinx.serialization.Serializable
 
 @Serializable

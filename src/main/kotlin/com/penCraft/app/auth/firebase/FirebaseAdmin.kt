@@ -1,4 +1,4 @@
-package com.penCraft.app.firebase
+package com.penCraft.app.auth.firebase
 
 import com.google.auth.oauth2.GoogleCredentials
 import com.google.firebase.FirebaseApp

@@ -1,14 +1,14 @@
-package dev.zlagi.application.plugins
+package com.penCraft.app.plugins
 
 import com.auth0.jwt.exceptions.JWTDecodeException
 import com.auth0.jwt.exceptions.SignatureVerificationException
 import com.auth0.jwt.exceptions.TokenExpiredException
 import com.auth0.jwt.interfaces.JWTVerifier
-import dev.zlagi.application.auth.firebase.FirebaseConfig.configure
-import dev.zlagi.application.auth.firebase.firebase
-import dev.zlagi.application.auth.principal.UserPrincipal
-import dev.zlagi.application.model.response.GeneralResponse
-import dev.zlagi.data.dao.UserDao
+import com.penCraft.app.auth.firebase.FirebaseConfig.configure
+import com.penCraft.app.auth.firebase.firebase
+import com.penCraft.app.auth.principal.UserPrincipal
+import com.penCraft.app.model.response.GeneralResponse
+import com.penCraft.data.dao.UserDao
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.auth.jwt.*

@@ -1,12 +1,12 @@
-package dev.zlagi.application.router
+package com.penCraft.app.router
 
-import dev.zlagi.application.auth.principal.UserPrincipal
-import dev.zlagi.application.controller.blog.BlogController
-import dev.zlagi.application.controller.blog.BlogController.Companion.ONESIGNAL_APP_ID
-import dev.zlagi.application.model.request.BlogRequest
-import dev.zlagi.application.model.request.Notification
-import dev.zlagi.application.model.request.NotificationMessage
-import dev.zlagi.application.model.response.generateHttpResponse
+import com.penCraft.app.auth.principal.UserPrincipal
+import com.penCraft.app.controller.blog.BlogController
+import com.penCraft.app.controller.blog.BlogController.Companion.ONESIGNAL_APP_ID
+import com.penCraft.app.model.request.BlogRequest
+import com.penCraft.app.model.request.Notification
+import com.penCraft.app.model.request.NotificationMessage
+import com.penCraft.app.model.response.generateHttpResponse
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.client.*

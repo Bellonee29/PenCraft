@@ -1,8 +1,7 @@
 package com.penCraft.data.model
 
-import com.penCraft.data.database.table.Blogs
 import com.penCraft.data.entity.EntityBlog
-import com.penCraft.data.entity.EntityUser
+
 
 data class BlogDataModel(
     val id: Int,

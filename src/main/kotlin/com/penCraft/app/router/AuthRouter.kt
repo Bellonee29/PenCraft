@@ -1,8 +1,8 @@
-package dev.zlagi.application.router
+package com.penCraft.app.router
 
-import dev.zlagi.application.controller.auth.AuthController
-import dev.zlagi.application.model.request.*
-import dev.zlagi.application.model.response.generateHttpResponse
+import com.penCraft.app.controller.auth.AuthController
+import com.penCraft.app.model.request.*
+import com.penCraft.app.model.response.generateHttpResponse
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.request.*

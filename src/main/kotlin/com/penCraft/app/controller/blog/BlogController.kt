@@ -1,13 +1,13 @@
-package dev.zlagi.application.controller.blog
+package com.penCraft.app.controller.blog
 
-import dev.zlagi.application.auth.principal.UserPrincipal
-import dev.zlagi.application.controller.BaseController
-import dev.zlagi.application.exception.BadRequestException
-import dev.zlagi.application.exception.BlogNotFoundException
-import dev.zlagi.application.model.request.BlogRequest
-import dev.zlagi.application.model.request.Notification
-import dev.zlagi.application.model.response.*
-import dev.zlagi.data.dao.BlogsDao
+import com.penCraft.app.auth.principal.UserPrincipal
+import com.penCraft.app.controller.BaseController
+import com.penCraft.app.exception.BadRequestException
+import com.penCraft.app.exception.BlogNotFoundException
+import com.penCraft.app.model.request.BlogRequest
+import com.penCraft.app.model.request.Notification
+import com.penCraft.app.model.response.*
+import com.penCraft.data.dao.BlogsDao
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.client.*

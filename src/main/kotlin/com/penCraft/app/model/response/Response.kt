@@ -1,4 +1,4 @@
-package dev.zlagi.application.model.response
+package com.penCraft.app.model.response
 
 /**
  * Response model to expose in API response

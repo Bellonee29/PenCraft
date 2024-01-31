@@ -1,9 +1,8 @@
 package com.penCraft.app.controller.di
 
-import dev.zlagi.application.controller.auth.AuthController
-import dev.zlagi.application.controller.auth.DefaultAuthController
-import dev.zlagi.application.controller.blog.BlogController
-import dev.zlagi.application.controller.blog.DefaultBlogController
+import com.penCraft.app.controller.auth.AuthController
+import com.penCraft.app.controller.auth.DefaultAuthController
+import com.penCraft.app.controller.blog.BlogController
 import org.koin.dsl.module
 
 object ControllerModule {

@@ -1,4 +1,4 @@
-package dev.zlagi.application.auth.firebase
+package com.penCraft.app.auth.firebase
 
 import com.penCraft.app.auth.firebase.FirebaseAuthenticationProvider
 import kotlinx.coroutines.runBlocking
