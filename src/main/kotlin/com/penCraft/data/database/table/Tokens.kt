@@ -1,7 +1,6 @@
 package com.penCraft.data.database.table
 
 import com.penCraft.data.dao.TokenDao
-import com.penCraft.data.database.table.Users
 import com.penCraft.data.entity.EntityToken
 import com.penCraft.data.entity.EntityUser
 import com.penCraft.data.model.Token

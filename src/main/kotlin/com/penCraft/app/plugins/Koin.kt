@@ -6,7 +6,7 @@ import com.penCraft.app.auth.PasswordEncryptor
 import com.penCraft.app.auth.PasswordEncryptorContract
 import com.penCraft.app.auth.TokenProvider
 import com.penCraft.app.controller.di.ControllerModule
-import dev.zlagi.data.di.DaoModule
+import com.penCraft.data.di.DaoModule
 import io.ktor.application.*
 import org.koin.core.annotation.KoinReflectAPI
 import org.koin.dsl.module

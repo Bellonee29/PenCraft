@@ -1,8 +1,8 @@
-package dev.zlagi.data.database.table
+package com.penCraft.data.database.table
 
 import com.penCraft.data.dao.UserDao
-import dev.zlagi.data.entity.EntityUser
-import dev.zlagi.data.model.User
+import com.penCraft.data.entity.EntityUser
+import com.penCraft.data.model.User
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.dao.id.IntIdTable
 import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransaction

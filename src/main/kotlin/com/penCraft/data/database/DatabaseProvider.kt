@@ -56,27 +56,6 @@ class DatabaseProvider : DatabaseProviderContract, KoinComponent {
         const val user = "postgres"
         const val dbpassword = "root"
     }*/
-
-    // For heroku deployement
-    private fun hikari(): HikariDataSource {
-        val config = HikariConfig()
-        config.driverClassName = System.getenv("JDBC_DRIVER")
-        config.isAutoCommit = false
-        config.transactionIsolation = "TRANSACTION_REPEATABLE_READ"
-
-        val uri = URI(System.getenv("DATABASE_URL"))
-        val username = uri.userInfo.split(":").toTypedArray()[0]
-        val password = uri.userInfo.split(":").toTypedArray()[1]
-
-        config.jdbcUrl =
-            "jdbc:postgresql://" + uri.host + ":" + uri.port + uri.path + "?sslmode=require" + "&user=$username&password=$password"
-
-
-        config.validate()
-
-        return HikariDataSource(config)
-    }
-
 }
 
 interface DatabaseProviderContract {

@@ -1,4 +1,4 @@
-package dev.zlagi.data.database.table
+package com.penCraft.data.database.table
 
 import com.penCraft.data.dao.BlogsDao
 import com.penCraft.data.entity.EntityBlog

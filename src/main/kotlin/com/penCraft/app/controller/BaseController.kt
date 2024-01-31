@@ -1,7 +1,7 @@
 package com.penCraft.app.controller
 
-import com.PenCraft.app.utils.isAlphaNumeric
-import com.PenCraft.app.utils.isEmailValid
+import com.penCraft.app.utils.isAlphaNumeric
+import com.penCraft.app.utils.isEmailValid
 import com.penCraft.app.auth.PasswordEncryptorContract
 import com.penCraft.app.auth.TokenProvider
 import com.penCraft.app.exception.BadRequestException

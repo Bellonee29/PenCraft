@@ -1,13 +1,10 @@
 package com.penCraft.app
 
 import com.auth0.jwt.interfaces.JWTVerifier
-import com.penCraft.app.firebase.FirebaseAdmin
+import com.penCraft.app.auth.firebase.FirebaseAdmin
+import com.penCraft.app.plugins.*
 import com.penCraft.data.dao.UserDao
 import com.penCraft.data.database.DatabaseProviderContract
-import dev.zlagi.application.plugins.configureKoin
-import dev.zlagi.application.plugins.configureMonitoring
-import dev.zlagi.application.plugins.configureSecurity
-import dev.zlagi.application.plugins.configureSerialization
 import io.ktor.application.*
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
